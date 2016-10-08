@@ -14,7 +14,7 @@
     <version>1.0</version>
     <packaging>jar</packaging>
 
-    <name>Persistence API</name>
+    <name>DAO API</name>
 
     <dependencies>
         <dependency>

@@ -4,7 +4,6 @@ import com.bakigoal.dao.BaseDao;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.io.Serializable;
 import java.util.List;
@@ -12,13 +11,16 @@ import java.util.List;
 /**
  * Created by ilmir on 08.10.16.
  */
-@Transactional
 public class BaseDaoImpl<E> implements BaseDao<E> {
 
   private Class entityClass;
 
-  public BaseDaoImpl(Class entityClass) {
+  public void setEntityClass(Class entityClass) {
     this.entityClass = entityClass;
+  }
+
+  public BaseDaoImpl(Class entityClass) {
+    setEntityClass(entityClass);
   }
 
   @Autowired

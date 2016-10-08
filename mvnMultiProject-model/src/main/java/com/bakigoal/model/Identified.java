@@ -23,4 +23,11 @@ public abstract class Identified implements Serializable{
   public void setId(Long id) {
     this.id = id;
   }
+
+  @Override
+  public String toString() {
+    return "Identified{" +
+        "id=" + id +
+        '}';
+  }
 }

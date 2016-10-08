@@ -1,4 +1,4 @@
-package com.bakigoal.dao;
+package com.bakigoal.service;
 
 import java.io.Serializable;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Created by ilmir on 08.10.16.
  */
-public interface BaseDao<E> {
+public interface BaseService<E> {
 
   void save(E e);
 

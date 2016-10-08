@@ -4,7 +4,6 @@ import com.bakigoal.dao.AccountRepository;
 import com.bakigoal.model.Account;
 import org.hibernate.query.Query;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -12,7 +11,6 @@ import java.util.List;
  * Created by ilmir on 08.10.16.
  */
 @Repository
-@Transactional
 public class AccountRepositoryImpl extends BaseDaoImpl<Account> implements AccountRepository {
 
   public AccountRepositoryImpl() {

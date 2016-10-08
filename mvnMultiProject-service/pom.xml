@@ -12,6 +12,16 @@
 
     <artifactId>mvnMultiProject-service</artifactId>
     <version>1.0</version>
+    <packaging>jar</packaging>
 
+    <name>SERVICE API</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.bakigoal</groupId>
+            <artifactId>mvnMultiProject-dao</artifactId>
+            <version>1.0</version>
+        </dependency>
+    </dependencies>
 
 </project>
