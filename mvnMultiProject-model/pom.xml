@@ -14,7 +14,7 @@
     <version>1.0</version>
     <packaging>jar</packaging>
 
-    <name>Model API</name>
+    <name>MODEL API</name>
 
     <dependencies>
         <dependency>
